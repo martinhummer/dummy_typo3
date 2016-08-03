@@ -30,4 +30,4 @@
 /htdocs/typo3conf/*.log
 /htdocs/typo3conf/l10n/*
 /htdocs/typo3conf/ext/*
-!/htdocs/typo3conf/ext/speciality
+!/htdocs/typo3conf/ext/config

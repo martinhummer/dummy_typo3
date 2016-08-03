@@ -26,11 +26,11 @@
 	},
     "autoload": {
       "psr-4": {
-
+        "Mh\\Config\\": "Classes/"
       },
       "classmap":
       [
-
+        "htdocs/typo3conf/ext/config/Classes/"
       ]
     },
 	"autoload-dev": {
