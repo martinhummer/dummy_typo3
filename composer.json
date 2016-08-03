@@ -26,11 +26,11 @@
 	},
     "autoload": {
       "psr-4": {
-        //"Transform\\Speciality\\": "Classes/"
+
       },
       "classmap":
       [
-        //"htdocs/typo3conf/ext/speciality/Classes/"
+
       ]
     },
 	"autoload-dev": {
@@ -77,12 +77,10 @@
 	},
 	"scripts": {
 		"post-install-cmd": [
-			"cp htdocs/typo3conf/ext/media/Resources/Public/JavaScript/Plugins/LinkCreator.js htdocs/typo3/sysext/rtehtmlarea/Resources/Public/JavaScript/Plugins",
-			"cp htdocs/typo3conf/ext/media/Resources/Public/JavaScript/Plugins/ImageEditor.js htdocs/typo3/sysext/rtehtmlarea/Resources/Public/JavaScript/Plugins"
+
 		],
 		"post-update-cmd": [
-			"cp htdocs/typo3conf/ext/media/Resources/Public/JavaScript/Plugins/LinkCreator.js htdocs/typo3/sysext/rtehtmlarea/Resources/Public/JavaScript/Plugins",
-			"cp htdocs/typo3conf/ext/media/Resources/Public/JavaScript/Plugins/ImageEditor.js htdocs/typo3/sysext/rtehtmlarea/Resources/Public/JavaScript/Plugins"
+
 		]
 	}
 }
