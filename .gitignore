@@ -4,6 +4,7 @@
 /.idea
 /nbproject
 /vendor
+/node_modules
 /build
 /build.xml
 /bin
