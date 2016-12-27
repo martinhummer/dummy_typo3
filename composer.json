@@ -9,14 +9,9 @@
 	"description": "TYPO3 CMS Distribution",
 	"license": "GPL-2.0+",
 	"require": {
-		"typo3/cms": "8.3.*",
-
+		"typo3/cms": "8.5.*",
 		"fluidtypo3/vhs": "3.*.*",
-
-		"typo3-ter/nc-staticfilecache": "*",
-		"typo3-ter/realurl": "2.1.*",
-       		"typo3-ter/news": "5.*",
-		"helhum/typo3-console": "3.5.*"
+		"helhum/typo3-console": "4.1.*"
 	},
 	"require-dev": {
 		"mikey179/vfsStream": "1.4.*@dev",
