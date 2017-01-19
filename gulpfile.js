@@ -15,6 +15,10 @@ require('laravel-elixir-vue-2');
 
 
 elixir((mix) => {
-	mix.sass('app.scss');
+	mix.sass('app.scss')
+		.styles(['app.css', '../vendor/example.css'])
+		.browserSync({
+			proxy: 'dummytypo3:8888'
+		})
 
 });

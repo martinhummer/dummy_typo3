@@ -4,6 +4,8 @@
 /.idea
 /nbproject
 /vendor
+/resources/cache
+/resources/.DS_Store
 /node_modules
 /build
 /build.xml
