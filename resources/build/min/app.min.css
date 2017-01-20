@@ -1,0 +1,21 @@
+.Testimonial {
+  border: 10px;
+}
+.Testimonial--is-featured {
+  width: 100%;
+}
+.Testimonial__body {
+  padding: 10px;
+}
+.Testimonial__name {
+  color: #f00;
+}
+.about .Testimonial {
+  border: 20px;
+}
+
+{"version":3,"sources":["app.css"],"names":[],"mappings":"AAAA","file":"app.css","sourcesContent":[]}
+#test {
+    padding:15px;
+    margin:0;
+}

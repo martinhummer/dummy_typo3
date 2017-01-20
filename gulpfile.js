@@ -2,6 +2,9 @@ const elixir = require('laravel-elixir');
 
 require('laravel-elixir-vue-2');
 
+elixir.config.sourcemaps = false;
+
+
 /*
  |--------------------------------------------------------------------------
  | Elixir Asset Management
@@ -14,11 +17,10 @@ require('laravel-elixir-vue-2');
  */
 
 
-elixir((mix) => {
-	mix.sass('app.scss')
-		.styles(['app.css', '../vendor/example.css'])
-		.browserSync({
-			proxy: 'dummytypo3:8888'
-		})
-
+elixir(function(mix) {
+    mix.stylus(['app.styl'], './resources/build/css')
+        .styles(['../../build/css', '../vendor/example.css'], './resources/build/min/app.min.css')
+        .browserSync({
+            proxy: 'localhost:8888/dummy/resources/html/'
+        })
 });
