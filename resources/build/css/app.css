@@ -1,5 +1,44 @@
+.Container {
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.Container:before {
+  content: '';
+  display: table;
+}
+.Container:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.Container *:not(input):not(textarea):not(select) {
+  background-color: rgba(0, 0, 255, 0.1);
+}
 .Testimonial {
-  border: 10px;
+  width: calc(99.9% * 1/2 - (10px - 10px * 1/2));
+  height: calc(99.9% * 1/2 - (10px - 10px * 1/2));
+  height: 200px;
+}
+.Testimonial:nth-child(1n) {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  clear: none;
+}
+.Testimonial:last-child {
+  margin-right: 0;
+  margin-bottom: 0;
+}
+.Testimonial:nth-child(2n) {
+  margin-right: 0;
+  float: right;
+}
+.Testimonial:nth-child(2n + 1) {
+  clear: both;
+}
+.Testimonial:nth-last-child(-n + 2) {
+  margin-bottom: 0;
 }
 .Testimonial--is-featured {
   width: 100%;

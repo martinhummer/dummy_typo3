@@ -1,4 +1,5 @@
 const elixir = require('laravel-elixir');
+var postStylus = require('poststylus');
 
 require('laravel-elixir-vue-2');
 
@@ -18,9 +19,14 @@ elixir.config.sourcemaps = false;
 
 
 elixir(function(mix) {
-    mix.stylus(['app.styl'], './resources/build/css')
+    mix.stylus(
+        ['app.styl'], './resources/build/css',
+        {
+            use: [postStylus(['lost'])] //pull in lost gridsystem
+        }
+    )
         .styles(['../../build/css', '../vendor/example.css'], './resources/build/min/app.min.css')
         .browserSync({
-            proxy: 'localhost:8888/dummy/resources/html/'
+            proxy: 'localhost:8888/dummy/resources/html/index.php'
         })
 });
