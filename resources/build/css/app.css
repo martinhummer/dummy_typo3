@@ -16,14 +16,14 @@
   background-color: rgba(0, 0, 255, 0.1);
 }
 .Testimonial {
-  width: calc(99.9% * 1/2 - (10px - 10px * 1/2));
-  height: calc(99.9% * 1/2 - (10px - 10px * 1/2));
+  width: calc(99.9% * 1/2 - (20px - 20px * 1/2));
+  height: calc(99.9% * 1/2 - (20px - 20px * 1/2));
   height: 200px;
 }
 .Testimonial:nth-child(1n) {
   float: left;
-  margin-right: 10px;
-  margin-bottom: 10px;
+  margin-right: 20px;
+  margin-bottom: 20px;
   clear: none;
 }
 .Testimonial:last-child {
@@ -52,3 +52,5 @@
 .about .Testimonial {
   border: 20px;
 }
+
+/*# sourceMappingURL=app.css.map */

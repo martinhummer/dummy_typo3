@@ -16,14 +16,14 @@
   background-color: rgba(0, 0, 255, 0.1);
 }
 .Testimonial {
-  width: calc(99.9% * 1/2 - (10px - 10px * 1/2));
-  height: calc(99.9% * 1/2 - (10px - 10px * 1/2));
+  width: calc(99.9% * 1/2 - (20px - 20px * 1/2));
+  height: calc(99.9% * 1/2 - (20px - 20px * 1/2));
   height: 200px;
 }
 .Testimonial:nth-child(1n) {
   float: left;
-  margin-right: 10px;
-  margin-bottom: 10px;
+  margin-right: 20px;
+  margin-bottom: 20px;
   clear: none;
 }
 .Testimonial:last-child {
@@ -53,8 +53,11 @@
   border: 20px;
 }
 
-{"version":3,"sources":["app.css"],"names":[],"mappings":"AAAA","file":"app.css","sourcesContent":[]}
+/*# sourceMappingURL=app.css.map */
+
+{"version":3,"sources":["components/container.styl","app.css","components/testimonial.styl","pages/about.styl"],"names":[],"mappings":"AAAA;EAEE,iBAAA;EAAA,kBAAA;EAAA,mBAAA;CCED;ADJD;EAEE,YAAA;EAAA,eAAA;CCMD;ADRD;EAEE,YAAA;EAAA,eAAA;EAAA,YAAA;CCWD;ADbD;EACE,uCAAA;CCeD;AChBD;EACE,+CAAA;EAAA,gDAAA;EACA,cAAA;CDmBD;ACrBD;EACE,YAAA;EAAA,mBAAA;EAAA,oBAAA;EAAA,YAAA;CD0BD;AC3BD;EACE,gBAAA;EAAA,iBAAA;CD8BD;AC/BD;EACE,gBAAA;EAAA,aAAA;CDkCD;ACnCD;EACE,YAAA;CDqCD;ACtCD;EACE,iBAAA;CDwCD;ACpCD;EACE,YAAA;CDsCD;ACnCD;EACE,cAAA;CDqCD;AClCD;EACI,YAAA;CDoCH;AE/CC;EACE,aAAA;CFiDH","file":"app.css","sourcesContent":[".Container {\n  lost-utility: edit;\n  lost-center: 980px;\n}",".Container {\n  max-width: 980px;\n  margin-left: auto;\n  margin-right: auto;\n}\n.Container:before {\n  content: '';\n  display: table;\n}\n.Container:after {\n  content: '';\n  display: table;\n  clear: both;\n}\n.Container *:not(input):not(textarea):not(select) {\n  background-color: rgba(0, 0, 255, 0.1);\n}\n.Testimonial {\n  width: calc(99.9% * 1/2 - (20px - 20px * 1/2));\n  height: calc(99.9% * 1/2 - (20px - 20px * 1/2));\n  height: 200px;\n}\n.Testimonial:nth-child(1n) {\n  float: left;\n  margin-right: 20px;\n  margin-bottom: 20px;\n  clear: none;\n}\n.Testimonial:last-child {\n  margin-right: 0;\n  margin-bottom: 0;\n}\n.Testimonial:nth-child(2n) {\n  margin-right: 0;\n  float: right;\n}\n.Testimonial:nth-child(2n + 1) {\n  clear: both;\n}\n.Testimonial:nth-last-child(-n + 2) {\n  margin-bottom: 0;\n}\n.Testimonial--is-featured {\n  width: 100%;\n}\n.Testimonial__body {\n  padding: 10px;\n}\n.Testimonial__name {\n  color: #f00;\n}\n.about .Testimonial {\n  border: 20px;\n}\n",".Testimonial\n  lost-waffle: 1/2 2 20px;\n  height: 200px;\n\n\n.Testimonial--is-featured  //state\n  width:100%\n\n\n.Testimonial__body\n  padding:10px\n\n\n.Testimonial__name\n    color:red\n\n","//overrides for the about page\n\n.about\n  & .Testimonial\n    border:20px\n\n"]}
 #test {
     padding:15px;
     margin:0;
 }
+/*# sourceMappingURL=app.min.css.map */
