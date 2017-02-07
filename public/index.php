@@ -11,7 +11,7 @@
  * performance for template code that does not depend on
  * dynamic variables (e.g. always produce the same output).
  */
-require __DIR__ . '/../include/view_init.php';
+require __DIR__ . '/../resources/include/view_init.php';
 // Assigning View variables: each variable defined using `assign()` can be used
 // used in the template as {variable}. Variables can be assigned individually
 // like here, or in bulk using `assignMultiple` which accepts an associative
@@ -19,7 +19,7 @@ require __DIR__ . '/../include/view_init.php';
 $view->assign('foobar', 'Test');
 // Assigning the template path and filename to be rendered. Doing this overrides
 // resolving normally done by the TemplatePaths and directly renders this file.
-$view->getTemplatePaths()->setTemplatePathAndFilename(__DIR__ . '/../html/Templates/ExampleTemplate.html');
+$view->getTemplatePaths()->setTemplatePathAndFilename(__DIR__ . '/../resources/html/Templates/ExampleTemplate.html');
 // Rendering the View: we don't specify the optional `$action` parameter for the
 // `render()` method - and internally, the View doesn't try to resolve an action
 // name because an action is irrelevant when rendering a file directly.

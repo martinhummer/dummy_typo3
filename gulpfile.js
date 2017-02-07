@@ -22,15 +22,17 @@ require('laravel-elixir-vue-2');
 
 elixir(function(mix) {
     mix.stylus(
-        ['app.styl'], './resources/build/css', //process stylus files
+        ['app.styl'], null, //process stylus files
         {
             use: [postStylus(['lost'])] //pull in lost gridsystem
         }
     )
-        .styles(['./resources/build/css', './resources/assets/vendor'], './resources/build/min/app.min.css') //combine & minify (minify is only applied with the flag --production)
+        .styles(['./public/css/app.css', './resources/assets/css/vendor'], './public/css/app.combined.css') //combine & minify (minify is only applied with the flag --production)
+        .rollup('app.js') //module bundling, treeshaking and conversion from ES6 to ES5
+        //.scripts(['./public/js/app.js', './resources/assets/js/vendor']) //combine some files
         .browserSync({
-            proxy: 'dummytypo3:8888',
-            files: ['resources/**/*', 'resources/html/**/*'] //files to watch
+            proxy: 'dummytypo3:8888/public',
+            files: ['resources/html/**/*', 'public/**/*'] //files to watch
             //proxy: 'localhost:8888/dummy/resources/html/index.php'
         })
 });
